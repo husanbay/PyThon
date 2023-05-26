@@ -115,14 +115,67 @@
 # file.write("Hi")
 # file.close()
 
-file = open ("new.txt","r", encoding="utf-8")
-# file.write("Hello, World\n")
-# file.write("Hi")
-s =file.read()
-print (s)
-file.close()
+
+# file = open ("new.txt","r", encoding="utf-8")
+# s =file.read()
+# print (s)
+# file.close()
 
 
+# login = input("ведите логин:")
+# password = int(input())
+# with open("user.txt", "a", encoding="utf-8") as file:
+#     file.write(f"ваш логин-{login}, ваш пароль{password}\n")
+
+# try: 
+#     with open("usr.txt", "r")as file:
+#         s =file.read()
+#         print (s)
+#         file.close()
+# except FileNotFoundError:
+#     print ("файл не найден")
 
 
+# file_name = "new.txt"
+# try:
+#     with open(file_name,"r") as file:
+#         text= file.read()
+#         if "Hello" in text:
+#             print ("да, в тексте есть Hello")
+#         else:
+#             print ("нет, в тексте нет Hello")
+# except FileNotFoundError:
+#     print("файл не найден")
 
+
+# file_name = "Lesson.txt"
+# with open(file_name, "w") as file:
+#     text = file.write("eifh oif hshfteh trrttt tggggg")
+# with open(file_name, "r") as file: 
+#     text = file.read()
+# t_words = []
+# for word in text.split(): 
+#     if "t" in word.lower():
+#         t_words.append(word)
+# for word in t_words:
+#     print(word)  
+ 
+
+numbers = [19, 3, 24, 5, 7]
+file_name="lesson.txt"
+with open(file_name, "w") as file:
+    for number in numbers:
+        file.write(str(number)+ "\n")
+max_number=float ("-inf")
+min_number=float ("inf")
+with open(file_name, "r")as file:
+    for i in file:
+        number = int(i.strip())
+        max_numner = max (max_number, number)
+        min_number = min (min_number, number)
+output_file = "result.txt"
+with open(output_file, "w") as file:
+    file.write("максимальное число:" + str (max_number)) + "\n"
+    file.write("минимальное число:" + str (min_number)) + "\n"
+print("максимальное и минимаьное число записаны ы файл", output_file)
+    
