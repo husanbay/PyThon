@@ -1,6 +1,6 @@
 # print("Hello World")
 
-    # 25.05.2023
+                      # 25.05.2023
 # a=[True, True, True, True]
 # print (any(a))
 # print (all(a))
@@ -161,21 +161,78 @@
 #     print(word)  
  
 
-numbers = [19, 3, 24, 5, 7]
-file_name="lesson.txt"
-with open(file_name, "w") as file:
-    for number in numbers:
-        file.write(str(number)+ "\n")
-max_number=float ("-inf")
-min_number=float ("inf")
-with open(file_name, "r")as file:
-    for i in file:
-        number = int(i.strip())
-        max_numner = max (max_number, number)
-        min_number = min (min_number, number)
-output_file = "result.txt"
-with open(output_file, "w") as file:
-    file.write("максимальное число:" + str (max_number)) + "\n"
-    file.write("минимальное число:" + str (min_number)) + "\n"
-print("максимальное и минимаьное число записаны ы файл", output_file)
+# numbers = [19, -3, 24, 5, 7]
+# file_name="lesson.txt"
+# with open(file_name, "w") as file:
+#     for number in numbers:
+#         file.write(str(number)+ "\n")
+# max_number=float ("-inf")
+# min_number=float ("inf")
+# with open(file_name, "r")as file:
+#     for i in file:
+#         number = int(i.strip())
+#         max_number = max (max_number, number)
+#         min_number = min (min_number, number)
+# output_file = "result.txt"
+# with open(output_file, "w") as file:
+#     file.write("максимальное число:" + str(max_number) + "\n")
+#     file.write("минимальное число:" + str(min_number) + "\n")
+# print("максимальное и минимаьное число записаны ы файл", output_file)
     
+
+
+
+
+
+                    #  29.05.2023г
+
+# import os
+# print(os.uname())
+
+# from random import  choice, sample, 
+# a = ['Beka', 'adilet', 'Kurmanbek', 'Syimyk', 'Ali']
+# print (choice (a))
+# print(sample(a, 3))
+
+
+
+
+# from random import  choice, sample, randint
+# count = 3
+# while count > 0:
+
+#     random_number =randint(0, 10)
+#     user = int(input("Введите цифру:")) 
+#     if user >10:
+#         print("Введите цифру от 0 до 10")
+#     elif user == random_number:
+#         print("вы угодали! ")
+#         break
+#     elif user  != random_number:
+#         print("вы не угодали")
+#         count -= 1
+#         print (random_number)
+
+
+
+# import math
+# print(math.ceil(4.3))
+# print(math.floor(4.3))
+# print(math.factorial(5))
+# print(math.sqrt(16))
+# num = int(input())
+# print(math.sin(num))
+
+
+# a = 10 + 10
+# print (a)
+
+
+
+# names = ["Aibek", "Joomart", "Adinai", "Ermek", "Atai", "Aslan","Lyazat",
+# "Salavat", "Daniyar", "Bolotbek", "Alymbek", "Dastan", "Maksat"]
+# from random import sample
+# print (sample (names, 4)
+
+            
+
